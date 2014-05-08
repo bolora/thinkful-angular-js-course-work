@@ -1,0 +1,17 @@
+<div class="container">
+	<h1>{{course.title}}</h1>
+	<p>{{course.description}} <a href="{{course.url}}" class="btn btn-default btn-xs" target="_new">Go to course</a></p>
+	<h2>Units</h2>
+	<hr/>
+	<ul class="unstyled">
+		<li ng-repeat="unit in course.units">
+			<h4>{{unit.title}}</h4>
+			<ul class="list-inline">
+				<li ng-repeat="lesson in unit.lessons">
+					<a href="{{lesson.url}}">{{lesson.title}}</a><span ng-if="!$last"> &nbsp;| </span>
+				</li>
+			</ul>
+			<hr/>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,41 @@
+    <div class="well person">
+        <center>
+            <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img ng-src="{{person.image}}" name="aboutme" width="140" height="140" class="img-circle"></a>
+            <h3>{{person.name}}</h3>
+        </center>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">More About {{person.first_name}}</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                    <img ng-src="{{person.image}}" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">{{person.name}}<small>{{person.location}}</small></h3>
+                    <span><strong>Skills: </strong></span>
+                        <span ng-repeat="skill in person.skills">
+                            <span class="label label-{{skill.color}}">{{skill.name}}</span>&nbsp;
+                        </span>
+                    </p>
+                    <hr>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                       {{person.bio}}</p>
+                    <br>
+                    <hr>
+                    <p class="text-left"><strong>Why I'm I taking this course? </strong><br>
+                       {{person.why}}</p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about {{person.first_name}}</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
