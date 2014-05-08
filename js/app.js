@@ -13,6 +13,7 @@ var boLoraApp = {};
 
 // load all of the dependencies asynchronously.
 $script([      
+  'lib/less.min.js',
   'js/services.js',
   'js/controllers.js',
   'js/filters.js',
@@ -65,16 +66,24 @@ $script([
 		    .state('unit1', {
 		      url: "/unit-1",
 		      views:{
-		      	"main-content-area@unit1": {
+		      	"sidebar": {
+		      		templateUrl: "partials/shared/sidebar.html",
+		      		controller:"courseIndexController"
+		      	},
+		      	"main": {
 		      		templateUrl: "partials/unit-1/index.html",
-		      		controller:"unit1Controller"
+		      		controller:"unit2Controller"
 		      	}
 		      }
 		    })
 		    .state('unit2', {
 		      url: "/unit-2",
 		      views:{
-		      	"main-content-area@unit1": {
+		      	"sidebar": {
+		      		templateUrl: "partials/shared/sidebar.html",
+		      		controller:"courseIndexController"
+		      	},
+		      	"main": {
 		      		templateUrl: "partials/unit-2/index.html",
 		      		controller:"unit2Controller"
 		      	}
@@ -83,22 +92,32 @@ $script([
 		    .state('unit3', {
 		      url: "/unit-3",
 		      views:{
-		      	"main-content-area@unit1": {
+		      	"sidebar": {
+		      		templateUrl: "partials/shared/sidebar.html",
+		      		controller:"courseIndexController"
+		      	},
+		      	"main": {
 		      		templateUrl: "partials/unit-3/index.html",
-		      		controller:"unit3Controller"
+		      		controller:"unit2Controller"
 		      	}
 		      }
 		    })
 		    .state('unit4', {
 		      url: "/unit-4",
 		      views:{
-		      	"main-content-area@unit1": {
+		      	"sidebar": {
+		      		templateUrl: "partials/shared/sidebar.html",
+		      		controller:"courseIndexController"
+		      	},
+		      	"main": {
 		      		templateUrl: "partials/unit-4/index.html",
-		      		controller:"unit4Controller"
+		      		controller:"unit2Controller"
 		      	}
 		      }
 		    })
 	}]);
+
+	less.refresh();
 
 	// when all is done, execute bootstrap angular application
 	angular.bootstrap(document, ['boLoraApp']);

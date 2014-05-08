@@ -48,7 +48,7 @@ angular.module('boLoraApp.services', []).
   		{
   			"id":"unit1",
   			"title":"UNIT 1: Introducing AngularJS",
-  			"url":"http://www.thinkful.com/courses/ANG-001/unit/1",
+  			"url":"#/unit-1",
   			"lessons":[
   				{
   					"id":"1",
@@ -80,7 +80,7 @@ angular.module('boLoraApp.services', []).
   		{
   			"id":"unit2",
   			"title":"UNIT 2: Practical Single Page Web Apps in Angular",
-  			"url":"http://www.thinkful.com/courses/ANG-001/unit/2",
+  			"url":"#/unit-2",
   			"lessons":[
   				{
   					"id":"1",
@@ -107,7 +107,7 @@ angular.module('boLoraApp.services', []).
   		{
   			"id":"unit3",
   			"title":"UNIT 3: Bringing the UI to Life",
-  			"url":"http://www.thinkful.com/courses/ANG-001/unit/3",
+  			"url":"#/unit-3",
   			"lessons":[
   				{
   					"id":"1",
@@ -129,7 +129,7 @@ angular.module('boLoraApp.services', []).
   		{
   			"id":"unit4",
   			"title":"UNIT 4: AngularJS and Beyond & Capstone",
-  			"url":"http://www.thinkful.com/courses/ANG-001/unit/4"
+  			"url":"#/unit-4"
   		}
   	],
   	"community": {
