@@ -1,2 +1,28 @@
 <h1>Unit 1 Assigments</h1>
 <a href="#/index"><i class="glyphicon glyphicon-chevron-left"></i> BACK</a>
+
+<h3>Web Basics Coding Challenge</h3>
+
+<div class="well assignment" ng-init="operation='addition'">
+	<center>
+		<h4>Addr / Subtractor</h4>
+		<p>
+			<span>X = </span><input type="number" placeholder="Enter an Integer" ng-model="xAmount"/>
+		</p>
+		<p>
+			<span>Y = </span><input type="number" placeholder="Enter an Integer" ng-model="yAmount"/>
+		</p>
+		<p>
+			<button class="btn btn-info" ng-click="operation='addition'">
+				<i class="glyphicon glyphicon-plus-sign"></i>
+			</button> 
+			<button class="btn btn-danger" ng-click="operation='subtraction'">
+				<i class="glyphicon glyphicon-minus-sign"></i>
+			</button>
+		</p>
+		<h4 ng-class="{transparent: !(xAmount && yAmount)}">
+			{{xAmount}} <span ng-if="operation=='addition'"> plus </span><span ng-if="operation=='subtraction'"> minus </span> {{yAmount}} is <span ng-if="operation=='addition'">{{xAmount + yAmount}}</span><span ng-if="operation=='subtraction'">{{xAmount - yAmount}}</span>
+		</h4>
+	</center>
+
+</div>
