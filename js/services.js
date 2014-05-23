@@ -62,12 +62,12 @@ angular.module('boLoraApp.services', []).
   				},
   				{
   					"id":"3",
-  					"title":"Up and Running with Angular",
+  					"title":"Scope, Controllers, and Modules",
   					"url":"http://www.thinkful.com/courses/ANG-001/unit/1/lesson/3"
   				},
   				{
   					"id":"4",
-  					"title":"Up and Running with Angular",
+  					"title":"Animation Basics in Angular",
   					"url":"http://www.thinkful.com/courses/ANG-001/unit/1/lesson/4"
   				},
   				{
